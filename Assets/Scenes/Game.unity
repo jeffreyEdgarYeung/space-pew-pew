@@ -279,10 +279,9 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 651240203513350498, guid: 48ab0e3ee69906a418368f4131ef6970,
         type: 3}
-      propertyPath: laserPrefab
-      value: 
-      objectReference: {fileID: 848522388812182677, guid: 27a03355a63dfcf4ab3715dc02df1271,
-        type: 3}
+      propertyPath: projectileRate
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 651240203513350499, guid: 48ab0e3ee69906a418368f4131ef6970,
         type: 3}
       propertyPath: m_RootOrder

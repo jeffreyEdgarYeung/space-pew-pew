@@ -97,3 +97,7 @@ MonoBehaviour:
   moveSpeed: 14.9
   xPadding: 0.5
   yPadding: 0.5
+  laserPrefab: {fileID: 848522388812182677, guid: 27a03355a63dfcf4ab3715dc02df1271,
+    type: 3}
+  projectileSpeed: 10
+  projectileRate: 8
