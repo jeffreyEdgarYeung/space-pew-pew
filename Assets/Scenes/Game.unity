@@ -351,6 +351,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Spawner
       objectReference: {fileID: 0}
+    - target: {fileID: 2883550376370700018, guid: c3ba2a52351ff5c4bb1d89ad3090e62a,
+        type: 3}
+      propertyPath: looping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2883550376370700018, guid: c3ba2a52351ff5c4bb1d89ad3090e62a,
+        type: 3}
+      propertyPath: waveConfigs.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2883550376370700018, guid: c3ba2a52351ff5c4bb1d89ad3090e62a,
+        type: 3}
+      propertyPath: waveConfigs.Array.data[1]
+      value: 
+      objectReference: {fileID: 11400000, guid: 8c7493f337287034094e21859d7c7478,
+        type: 2}
+    - target: {fileID: 2883550376370700018, guid: c3ba2a52351ff5c4bb1d89ad3090e62a,
+        type: 3}
+      propertyPath: waveConfigs.Array.data[2]
+      value: 
+      objectReference: {fileID: 11400000, guid: 2c875bab8baa249408046833c7ca5444,
+        type: 2}
+    - target: {fileID: 2883550376370700018, guid: c3ba2a52351ff5c4bb1d89ad3090e62a,
+        type: 3}
+      propertyPath: waveConfigs.Array.data[3]
+      value: 
+      objectReference: {fileID: 11400000, guid: 90d71e6a61bff8b429f9dbc79ddc7841,
+        type: 2}
     - target: {fileID: 2883550376370700019, guid: c3ba2a52351ff5c4bb1d89ad3090e62a,
         type: 3}
       propertyPath: m_RootOrder
