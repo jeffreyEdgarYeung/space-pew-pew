@@ -46,11 +46,17 @@ public class Enemy : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        
         DamageDealer damageDealer = collision.gameObject.GetComponent<DamageDealer>();
-        ProcessHit(damageDealer, collision);
+        if( !damageDealer )
+        {
+            ProcessHit(damageDealer);
+            damageDealer.Hit();
+        }
+        
     }
 
-    private void ProcessHit(DamageDealer damageDealer, Collider2D collision)
+    private void ProcessHit(DamageDealer damageDealer)
     {
         health -= damageDealer.GetDamage();
 
@@ -59,9 +65,5 @@ public class Enemy : MonoBehaviour
             Destroy(gameObject);
         }
 
-        if (collision.gameObject.tag == "Laser")
-        {
-            Destroy(collision.gameObject);
-        }
     }
 }

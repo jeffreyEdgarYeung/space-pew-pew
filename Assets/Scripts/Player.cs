@@ -4,8 +4,12 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    [Header("Player Status")]
     [SerializeField][Range(0,50)] float moveSpeed = 10f;
     [SerializeField] float xPadding, yPadding;
+    [SerializeField] float health = 300;
+
+    [Header("Projectile")]
     [SerializeField] GameObject laserPrefab;
     [SerializeField] float projectileSpeed = 10f;
     [SerializeField] float projectileRate = 1f;                  // Bullets/second
@@ -77,5 +81,27 @@ public class Player : MonoBehaviour
         }
      
     }
-   
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        DamageDealer damageDealer = collision.gameObject.GetComponent<DamageDealer>();
+        if (!damageDealer)
+        {
+            ProcessHit(damageDealer);
+            damageDealer.Hit();
+        }
+        
+    }
+
+    private void ProcessHit(DamageDealer damageDealer)
+    {
+        health -= damageDealer.GetDamage();
+
+        if (health <= 0)
+        {
+            Destroy(gameObject);
+        }
+
+    }
+
 }
