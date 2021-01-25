@@ -109,6 +109,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 300
+  shotCountDown: 0
+  minTimeBetweenShots: 0.2
+  maxTimeBetweenShots: 3
+  laserPrefab: {fileID: 4463984555365051907, guid: 4f5df645a30e5644d95f486eb6e73050,
+    type: 3}
+  projectileSpeed: 6
 --- !u!60 &-7636102095989103907
 PolygonCollider2D:
   m_ObjectHideFlags: 0

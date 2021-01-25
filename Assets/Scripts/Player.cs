@@ -64,10 +64,12 @@ public class Player : MonoBehaviour
     {
         while (true)
         {
-            GameObject laser = Instantiate(
+            GameObject laser = Instantiate
+            (
                laserPrefab,
                transform.position,
-               Quaternion.identity) as GameObject;
+               Quaternion.identity
+            ) as GameObject;
 
             laser.GetComponent<Rigidbody2D>().velocity = new Vector2(0, projectileSpeed);
 
