@@ -48,7 +48,7 @@ public class Enemy : MonoBehaviour
     {
         
         DamageDealer damageDealer = collision.gameObject.GetComponent<DamageDealer>();
-        if( !damageDealer )
+        if( damageDealer )
         {
             ProcessHit(damageDealer);
             damageDealer.Hit();
