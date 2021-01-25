@@ -112,6 +112,8 @@ MonoBehaviour:
   shotCountDown: 0
   minTimeBetweenShots: 1
   maxTimeBetweenShots: 3
+  deathAnimation: {fileID: 9069534792940470433, guid: 04ef01a7303f0a246b86a89f18b3b6c9,
+    type: 3}
   laserPrefab: {fileID: 4463984555365051907, guid: 4f5df645a30e5644d95f486eb6e73050,
     type: 3}
   projectileSpeed: 6

@@ -4,10 +4,14 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+    [Header("Enemy")]
     [SerializeField] float health = 100;
     [SerializeField] float shotCountDown;
     [SerializeField] float minTimeBetweenShots = 0.2f;
     [SerializeField] float maxTimeBetweenShots = 3f;
+    [SerializeField] GameObject deathAnimation;
+
+    [Header("Enemy Projectile")]
     [SerializeField] GameObject laserPrefab;
     [SerializeField] float projectileSpeed = 10f;
 
@@ -63,6 +67,7 @@ public class Enemy : MonoBehaviour
         if (health <= 0)
         {
             Destroy(gameObject);
+            Instantiate(deathAnimation, transform.position, Quaternion.identity);
         }
 
     }

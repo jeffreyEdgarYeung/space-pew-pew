@@ -8,6 +8,7 @@ public class Player : MonoBehaviour
     [SerializeField][Range(0,50)] float moveSpeed = 10f;
     [SerializeField] float xPadding, yPadding;
     [SerializeField] float health = 300;
+    [SerializeField] GameObject deathAnimation;
 
     [Header("Projectile")]
     [SerializeField] GameObject laserPrefab;
@@ -100,6 +101,7 @@ public class Player : MonoBehaviour
         if (health <= 0)
         {
             Destroy(gameObject);
+            Instantiate(deathAnimation, transform.position, Quaternion.identity);
         }
 
     }
