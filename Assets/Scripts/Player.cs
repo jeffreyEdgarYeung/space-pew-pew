@@ -132,4 +132,6 @@ public class Player : MonoBehaviour
         Destroy(dSprite);
     }
 
+    public float GetHealth() { return health; }
+
 }
