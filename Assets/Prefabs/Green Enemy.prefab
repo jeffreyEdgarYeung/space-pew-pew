@@ -114,9 +114,13 @@ MonoBehaviour:
   maxTimeBetweenShots: 3
   deathAnimation: {fileID: 9069534792940470433, guid: 04ef01a7303f0a246b86a89f18b3b6c9,
     type: 3}
+  deathSFX: {fileID: 8300000, guid: 71f001efe5b8bcd4f9b52ffaa09de147, type: 3}
+  deathSFXVolume: 0.08
   laserPrefab: {fileID: 4463984555365051907, guid: 4f5df645a30e5644d95f486eb6e73050,
     type: 3}
   projectileSpeed: 6
+  projectileSFX: {fileID: 8300000, guid: 23bfb832d5176ac4d94e6ea20dae14ec, type: 3}
+  projectileSFXVolume: 0.1
 --- !u!60 &-7636102095989103907
 PolygonCollider2D:
   m_ObjectHideFlags: 0

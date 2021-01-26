@@ -141,12 +141,12 @@ PrefabInstance:
     - target: {fileID: 7118974596045927425, guid: 3b0e563496385f14abe85d1f9215857d,
         type: 3}
       propertyPath: m_Name
-      value: DeleteCollider
+      value: DeleteCollider Bottom
       objectReference: {fileID: 0}
     - target: {fileID: 7118974596045927427, guid: 3b0e563496385f14abe85d1f9215857d,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7118974596045927427, guid: 3b0e563496385f14abe85d1f9215857d,
         type: 3}
@@ -433,7 +433,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &651240202928294715
 PrefabInstance:
@@ -446,12 +446,17 @@ PrefabInstance:
         type: 3}
       propertyPath: deathAnimation
       value: 
-      objectReference: {fileID: 9069534792940470433, guid: 04ef01a7303f0a246b86a89f18b3b6c9,
+      objectReference: {fileID: 6962871135519064752, guid: 2043d9fdd18123545b2142e7fdc7f4cd,
         type: 3}
     - target: {fileID: 651240203513350498, guid: 48ab0e3ee69906a418368f4131ef6970,
         type: 3}
       propertyPath: projectileRate
       value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 651240203513350498, guid: 48ab0e3ee69906a418368f4131ef6970,
+        type: 3}
+      propertyPath: projectileSFXVolume
+      value: 0.024
       objectReference: {fileID: 0}
     - target: {fileID: 651240203513350499, guid: 48ab0e3ee69906a418368f4131ef6970,
         type: 3}
@@ -530,7 +535,7 @@ PrefabInstance:
     - target: {fileID: 5289398963427349605, guid: e59cff7b69279794c83392e2fce83792,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5289398963427349605, guid: e59cff7b69279794c83392e2fce83792,
         type: 3}
@@ -765,7 +770,7 @@ PrefabInstance:
     - target: {fileID: 7118974596045927425, guid: 3b0e563496385f14abe85d1f9215857d,
         type: 3}
       propertyPath: m_Name
-      value: DeleteCollider
+      value: DeleteCollider Top
       objectReference: {fileID: 0}
     - target: {fileID: 7118974596045927427, guid: 3b0e563496385f14abe85d1f9215857d,
         type: 3}

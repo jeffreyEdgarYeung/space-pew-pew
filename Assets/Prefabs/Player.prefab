@@ -99,10 +99,16 @@ MonoBehaviour:
   xPadding: 0.5
   yPadding: 0.5
   health: 300
+  deathAnimation: {fileID: 6962871135519064752, guid: 2043d9fdd18123545b2142e7fdc7f4cd,
+    type: 3}
+  deathSFX: {fileID: 8300000, guid: b75716d2ea32b06499af5e818566efaf, type: 3}
+  deathSFXVolume: 0.2
   laserPrefab: {fileID: 848522388812182677, guid: 27a03355a63dfcf4ab3715dc02df1271,
     type: 3}
   projectileSpeed: 10
   projectileRate: 10
+  projectileSFX: {fileID: 8300000, guid: 23bfb832d5176ac4d94e6ea20dae14ec, type: 3}
+  projectileSFXVolume: 0.125
 --- !u!1001 &5096022332851859865
 PrefabInstance:
   m_ObjectHideFlags: 0
