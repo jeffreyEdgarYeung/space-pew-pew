@@ -115,3 +115,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec5d35eac2f5cdb43880ea778b839bd4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damagedSFX: {fileID: 8300000, guid: 2f0a32ac5f3070342bf4f2404c753231, type: 3}
+  sfxVolume: 0.2

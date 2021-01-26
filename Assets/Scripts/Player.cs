@@ -113,6 +113,7 @@ public class Player : MonoBehaviour
         {
             StartCoroutine(ShowDamagedSprite());
         }
+        
     }
 
     private void Die()
