@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 618fc222dabd49f4d9ddf5b9a4269f43, type: 3}
-  m_Name: Brown Droop
+  m_Name: Big Boy
   m_EditorClassIdentifier: 
-  enemyPrefab: {fileID: 5044158343749827111, guid: 6396dc8a3a46a7840838df9b143bb8d9,
+  enemyPrefab: {fileID: 6810543327235091695, guid: 4233cd3d8c2a3b8498d0fb8ca8260205,
     type: 3}
-  pathPrefab: {fileID: 3849835658799279877, guid: 863bcfe1e3317e74fab4b1b1570738eb,
+  pathPrefab: {fileID: 3849835658799279877, guid: 7a0cdd349b1c98a409271931de133a20,
     type: 3}
-  timeBetweenSpawns: 0.5
+  timeBetweenSpawns: 2
   spawnRandomFactor: 0.3
-  numberOfEnemies: 1
-  moveSpeed: 5
+  numberOfEnemies: 3
+  moveSpeed: 1.5
