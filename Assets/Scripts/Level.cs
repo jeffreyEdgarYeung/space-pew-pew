@@ -15,6 +15,11 @@ public class Level : MonoBehaviour
     public void LoadGame()
     {
         StartCoroutine(WaitAndLoad("Game"));
+
+        if ( FindObjectsOfType<GameStatus>().Length > 0 )
+        {
+            FindObjectOfType<GameStatus>().ResetGame();
+        }
     }
 
     public void LoadGameOver()

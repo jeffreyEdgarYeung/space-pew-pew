@@ -110,7 +110,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 110a7cbb7a8f8fa449d155ac43488045, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 600
+  health: 400
   shotCountDown: 0
   minTimeBetweenShots: 2
   maxTimeBetweenShots: 3
@@ -118,6 +118,7 @@ MonoBehaviour:
     type: 3}
   deathSFX: {fileID: 8300000, guid: 71f001efe5b8bcd4f9b52ffaa09de147, type: 3}
   deathSFXVolume: 0.08
+  ptsForDestroy: 100
   laserPrefab: {fileID: 3558403357972822328, guid: 74d55580aefc4e948adf424d43ab2db0,
     type: 3}
   projectileSpeed: 10

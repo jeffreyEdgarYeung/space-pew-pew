@@ -12,6 +12,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] GameObject deathAnimation;
     [SerializeField] AudioClip deathSFX;
     [Range(0, 1)] [SerializeField] float deathSFXVolume = 0.7f;
+    [SerializeField] int ptsForDestroy;
 
     [Header("Enemy Projectile")]
     [SerializeField] GameObject laserPrefab;
@@ -76,5 +77,6 @@ public class Enemy : MonoBehaviour
         Destroy(gameObject);
         Instantiate(deathAnimation, transform.position, Quaternion.identity);
         AudioSource.PlayClipAtPoint(deathSFX, Camera.main.transform.position, deathSFXVolume);
+        FindObjectOfType<GameStatus>().AddToScore(ptsForDestroy);
     }
 }
