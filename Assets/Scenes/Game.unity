@@ -627,7 +627,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2042849654
 GameObject:
@@ -721,7 +721,7 @@ RectTransform:
   m_Children:
   - {fileID: 411005451}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -748,13 +748,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 651240203513350498, guid: 48ab0e3ee69906a418368f4131ef6970,
         type: 3}
+      propertyPath: damagedDuration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 651240203513350498, guid: 48ab0e3ee69906a418368f4131ef6970,
+        type: 3}
+      propertyPath: damagedAnimation
+      value: 
+      objectReference: {fileID: 1229725414214962716, guid: f6d8100ebff5dc94aa9ebbf9326b2372,
+        type: 3}
+    - target: {fileID: 651240203513350498, guid: 48ab0e3ee69906a418368f4131ef6970,
+        type: 3}
       propertyPath: projectileSFXVolume
       value: 0.024
       objectReference: {fileID: 0}
     - target: {fileID: 651240203513350499, guid: 48ab0e3ee69906a418368f4131ef6970,
         type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 651240203513350499, guid: 48ab0e3ee69906a418368f4131ef6970,
         type: 3}
@@ -897,7 +908,7 @@ PrefabInstance:
     - target: {fileID: 1609208671915136782, guid: e31c29d6ff002f3438a3199a0e2cd84f,
         type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1609208671915136782, guid: e31c29d6ff002f3438a3199a0e2cd84f,
         type: 3}

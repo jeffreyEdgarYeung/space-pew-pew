@@ -9,8 +9,11 @@ public class Player : MonoBehaviour
     [SerializeField] float xPadding, yPadding;
     [SerializeField] float health = 300;
     [SerializeField] GameObject deathAnimation;
+    [SerializeField] GameObject damagedAnimation;
+    [SerializeField] float damagedDuration;
     [SerializeField] AudioClip deathSFX;
     [Range(0, 1)] [SerializeField] float deathSFXVolume = 0.7f;
+    
 
     [Header("Projectile")]
     [SerializeField] GameObject laserPrefab;
@@ -103,7 +106,13 @@ public class Player : MonoBehaviour
     private void ProcessHit(DamageDealer damageDealer)
     {
         health -= damageDealer.GetDamage();
-        if (health <= 0){ Die(); }
+        if (health <= 0){ 
+            Die(); 
+        }
+        else
+        {
+            StartCoroutine(ShowDamagedSprite());
+        }
     }
 
     private void Die()
@@ -113,6 +122,13 @@ public class Player : MonoBehaviour
         AudioSource.PlayClipAtPoint(deathSFX, Camera.main.transform.position, deathSFXVolume);
         FindObjectOfType<Level>().LoadGameOver();
         FindObjectOfType<MusicPlayer>().StopMusic();
+    }
+
+    IEnumerator ShowDamagedSprite()
+    {
+        GameObject dSprite = Instantiate(damagedAnimation, transform.position, Quaternion.identity) as GameObject;
+        yield return new WaitForSeconds(damagedDuration);
+        Destroy(dSprite);
     }
 
 }
