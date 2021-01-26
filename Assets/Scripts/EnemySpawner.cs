@@ -7,14 +7,13 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField] List<WaveConfig> waveConfigs;
     [SerializeField] int startingWave = 0;
     [SerializeField] bool looping = false;
+    [SerializeField] float waveStartDelay = 0f;
 
     // Start is called before the first frame update
     IEnumerator Start()
     {
-        do
-        {
-            yield return StartCoroutine(SpawnAllWaves());
-        } while (looping);
+        yield return new WaitForSeconds(waveStartDelay);
+        StartCoroutine(SpawnInfiniteWaves());
         
     }
 
@@ -42,5 +41,14 @@ public class EnemySpawner : MonoBehaviour
             yield return new WaitForSeconds(currWave.GetTimeBetweenSpawns());
         }
         
+    }
+
+    private IEnumerator SpawnInfiniteWaves()
+    {
+        do
+        {
+            yield return StartCoroutine(SpawnAllWaves());
+
+        } while (looping);
     }
 }

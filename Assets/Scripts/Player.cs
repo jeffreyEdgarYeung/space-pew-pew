@@ -73,10 +73,12 @@ public class Player : MonoBehaviour
     {
         while (true)
         {
+            Vector3 laserPos = transform.position;
+            laserPos.z = 1;
             GameObject laser = Instantiate
             (
                laserPrefab,
-               transform.position,
+               laserPos,
                Quaternion.identity
             ) as GameObject;
 
@@ -109,6 +111,8 @@ public class Player : MonoBehaviour
         Destroy(gameObject);
         Instantiate(deathAnimation, transform.position, Quaternion.identity);
         AudioSource.PlayClipAtPoint(deathSFX, Camera.main.transform.position, deathSFXVolume);
+        FindObjectOfType<Level>().LoadGameOver();
+        FindObjectOfType<MusicPlayer>().StopMusic();
     }
 
 }

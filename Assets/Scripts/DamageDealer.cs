@@ -10,6 +10,7 @@ public class DamageDealer : MonoBehaviour
 
     public void Hit()
     {
-        Destroy(gameObject);
+        if( gameObject.tag == "Laser")
+            Destroy(gameObject);
     }
 }
